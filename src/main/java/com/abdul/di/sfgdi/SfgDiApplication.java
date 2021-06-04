@@ -21,6 +21,7 @@ public class SfgDiApplication {
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 		
 		MyController controller = (MyController) ctx.getBean("myController");
+
 		
 		String msg = controller.sayHello();
 		System.out.println(msg);
